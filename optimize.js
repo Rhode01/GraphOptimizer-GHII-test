@@ -39,12 +39,13 @@ class GraphOptimizer {
     for (let i = 0; i < iterations; i++) {
       this.applyForces(params);
       this.updatePositions(params.damping);
-      this.clampPositions();
+      // this.clampPositions();
       
       if ((i + 1) % 50 === 0) {
         console.log(`...Iteration ${i + 1}/${iterations} complete.`);
       }
     }
+    this.clampPositions()
     
     console.log("Optimization finished.");
     return this.getFinalPositions();
@@ -166,9 +167,9 @@ const malawiGraphData = {
 
 const optimizer = new GraphOptimizer(malawiGraphData);
 const finalPositions = optimizer.runLayout(300, {
-    attraction: 0.002,
-    repulsion: 0.06,
-    gravity: 0.015,
-    damping: 0.95
+    attraction: 0.01,    // stronger pull between connected nodes
+  repulsion: 0.002,    // weaker repulsion between unconnected nodes
+  gravity: 0.1,        // stronger pull toward original positions
+  damping: 0.9
 });
-console.log(JSON.stringify(finalPositions, null, 2));
+console.log(JSON.stringify(finalPositions, null, 2)); 
