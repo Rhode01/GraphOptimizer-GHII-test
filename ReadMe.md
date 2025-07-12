@@ -1,6 +1,6 @@
 # Malawi Districts Graph Layout Optimizer
 
-A small Node.js script that implements a custom, geographically-informed force-directed algorithm to optimize the layout of a graph representing the districts of Malawi.
+This project contains a Node.js script that implements a custom, geographically-informed force-directed algorithm to optimize the layout of a graph representing the districts of Malawi.
 
 ## Table of Contents
 
@@ -10,21 +10,14 @@ A small Node.js script that implements a custom, geographically-informed force-d
 - [Usage](#usage)  
   - [Save the Code](#save-the-code)  
   - [Run the Script](#run-the-script)  
-- [Expected Output](#expected-output)  
-- [License](#license)  
-
 ---
 
 ## Description
 
-This script takes a predefined set of **nodes** (Malawi’s districts with initial X/Y positions) and **edges** (connections between districts) and runs a physics-based simulation to rearrange the nodes. The goals are:
+The script takes a predefined set of nodes (districts with initial X/Y positions) and edges (connections between districts) and runs a physics-based simulation to rearrange the nodes. 
+The goal is to produce a visually clear layout where connected districts are close, all districts are spaced out to avoid overlap, and the overall geographic orientation of the map is preserved.
 
-1. Connected districts end up close to one another.  
-2. All districts are spaced out to avoid overlap.  
-3. The overall geographic orientation of the map is preserved.  
-
-When finished, the final optimized `(x, y)` coordinates for each district are printed to the console.
-
+The final, optimized `(X, Y)` coordinates for each district are printed to the console.
 ---
 
 ## Prerequisites
@@ -41,14 +34,6 @@ When finished, the final optimized `(x, y)` coordinates for each district are pr
 
 ---
 
-## Usage
-
-### Save the Code
-
-1. Copy the entire JavaScript source (including your `GraphOptimizer` class and `malawiGraphData` object) into a file named:
-
-   ```bash
-   optimize.js
 
 ### Execute the Script: 
 Run the script using Node.js with the following command:
