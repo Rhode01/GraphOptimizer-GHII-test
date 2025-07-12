@@ -22,9 +22,7 @@ The final, optimized `(X, Y)` coordinates for each district are printed to the c
 
 ## Prerequisites
 
-- **Node.js** (v12+) installed on your system.  
-  Download & install from: https://nodejs.org/
-
+- **Node.js** You must have Node.js installed on your system to run this script. You can download it from https://nodejs.org/
 ---
 
 ## Setup & Dependencies
@@ -36,6 +34,11 @@ The final, optimized `(X, Y)` coordinates for each district are printed to the c
 
 
 ### Execute the Script: 
-Run the script using Node.js with the following command:
+Save the Code by Opening a Terminal or command prompt:
+`git clone https://github.com/Rhode01/GraphOptimizer-GHII-test.git` 
+
+Open a Terminal: Open your terminal or command prompt.
+
+Navigate to the File: Use the cd command to navigate to the directory where you saved `GraphOptimizer-GHII-test/optimize.js.`
 ```bash
     node optimize.js
