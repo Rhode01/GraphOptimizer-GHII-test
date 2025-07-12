@@ -49,3 +49,8 @@ When finished, the final optimized `(x, y)` coordinates for each district are pr
 
    ```bash
    optimize.js
+
+### Execute the Script: 
+Run the script using Node.js with the following command:
+```bash
+    node optimize.js
